@@ -23,6 +23,6 @@ jobs:
 
       - name: Multi Line Message
         run: >
-           Multiline
-           Output
-           Displays in single line
+          Multiline
+          Output
+          Displays in single line
