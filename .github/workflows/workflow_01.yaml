@@ -1,0 +1,28 @@
+name: Ram Workflow
+
+on:
+  push:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print Greeting
+        run: |
+          echo "Hello, Ram! 🎉"
+          echo "This workflow ran because you pushed code."
+
+      - name: Print Commit Message
+        run: |
+          echo "Commit Message:"
+          echo "${{ github.event.head_commit.message }}"
+
+      - name: Multi Line Message
+        run: >
+          echo "Hello"
+          echo "This is"
+          echo "Ram"
