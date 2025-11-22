@@ -23,6 +23,6 @@ jobs:
 
       - name: Multi Line Message
         run: >
-          echo "Hello"
-          echo "This is"
-          echo "Ram"
+          echo "Multiline"
+               "Output"
+               "Displays in single line"
