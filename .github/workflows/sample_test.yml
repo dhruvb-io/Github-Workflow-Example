@@ -8,18 +8,21 @@ jobs:
         runs-on: Ubuntu-latest
 
         steps:
-
-            - name: case01
-              uses: echo "Case 01 passed successfully"
-
-            - name: |
-              uses: echo "Line one of multiline input"
-                    echo "Line two of multipline input"
-
-            - name: <
-              uses: echo "Compressing
-                    mutiple lines
-                    in one line"
-
             - name: Checkout Code
               uses: actions/checkout@v5
+
+            - name: test_case
+              run: | 
+                echo "Test Case passed successfully"
+                echo "Validation Successfully passed"
+
+            - name: Multi Line Input
+              run: |
+                echo "Line one of multiline input"
+                echo "Line two of multipline input"
+
+            - name: Multiline Compression to one line
+              run: < 
+                echo "Compressing
+                mutiple lines
+                in one line"
