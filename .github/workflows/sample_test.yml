@@ -22,7 +22,7 @@ jobs:
                 echo "Line two of multipline input"
 
             - name: Multiline Compression to one line
-              run: < 
+              run: > 
                 echo "Compressing
                 mutiple lines
                 in one line"
