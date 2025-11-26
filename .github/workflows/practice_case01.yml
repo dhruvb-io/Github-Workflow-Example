@@ -1,0 +1,27 @@
+name: "Test Case 01"
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    greet:
+        runs-on" Ubuntu-latest
+
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+
+            - name: Hello World
+              run: echo "Hello World"
+
+            - name: Testing Multiple Lines
+              run: |
+                echo "Printing line one"
+                echo "Printing line two"
+
+            - name: Testing Multi line output merger in one line
+              run: >
+                echo "Print line one
+                Print line two" 
